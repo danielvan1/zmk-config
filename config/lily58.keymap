@@ -40,7 +40,7 @@
             //                     |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&kp ESCAPE      &none  &none  &none  &none   &none                                    &none           &kp BACKSLASH      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS  &mt PLUS BACKSPACE
+&kp ESCAPE      &none  &none  &none  &none   &none                                    &none           &kp BACKSLASH      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS  &kp PLUS
 &kp TAB         &none  &none  &none  &none   &none                                    &none           &kp PIPE           &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp UNDER  &kp KP_EQUAL
 &kp LEFT_SHIFT  &none  &none  &none  &none   &none                                    &kp LEFT_ARROW  &kp DOWN_ARROW     &kp UP            &kp RIGHT_ARROW    &kp GRAVE  &kp ENTER
 &kp LCTRL       &none  &none  &none  &trans  &trans        &trans          &trans     &trans          &kp C_VOLUME_DOWN  &kp C_VOL_UP      &kp K_MUTE         &none      &kp DELETE
