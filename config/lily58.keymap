@@ -21,11 +21,11 @@
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
             bindings = <
-&kp ESC         &kp N1  &kp N2  &kp N3  &kp N4            &kp N5                                       &kp N6  &kp N7            &kp N8         &kp N9   &kp N0    &kp BACKSPACE
-&kp TAB         &kp Q   &kp W   &kp E   &kp R             &kp T                                        &kp Y   &kp U             &kp I          &kp O    &kp P     &kp SINGLE_QUOTE
-&kp LEFT_SHIFT  &kp A   &kp S   &kp D   &mt LEFT_SHIFT F  &kp G                                        &kp H   &mt LEFT_SHIFT J  &kp K          &kp L    &kp SEMI  &kp ENTER
-&kp RCTRL       &kp Z   &kp X   &kp C   &kp V             &kp B             &kp LBKT        &kp RBKT   &kp N   &kp M             &kp COMMA      &kp DOT  &kp FSLH  &kp RSHFT
-                                &none   &to 1             &kp LEFT_COMMAND  &kp LEFT_ALT    &kp SPACE  &to 2   &kp BACKSPACE     &kp RIGHT_ALT
+&kp ESC         &mt EXCL NUMBER_1  &mt AT NUMBER_2  &mt HASH NUMBER_3  &mt DOLLAR NUMBER_4  &mt PERCENT NUMBER_5                             &mt CARET NUMBER_6  &mt AMPERSAND N7  &mt KP_ASTERISK N8  &mt LEFT_PARENTHESIS N9  &mt RIGHT_PARENTHESIS N0  &kp BACKSPACE
+&kp TAB         &kp Q              &kp W            &kp E              &kp R                &kp T                                            &kp Y               &kp U             &kp I               &kp O                    &kp P                     &kp SINGLE_QUOTE
+&kp LEFT_SHIFT  &kp A              &kp S            &kp D              &mt LEFT_SHIFT F     &kp G                                            &kp H               &mt LEFT_SHIFT J  &kp K               &kp L                    &kp SEMI                  &kp ENTER
+&kp RCTRL       &kp Z              &kp X            &kp C              &kp V                &kp B                 &kp LBKT        &kp RBKT   &kp N               &kp M             &kp COMMA           &kp DOT                  &kp FSLH                  &kp RSHFT
+                                                    &none              &to 1                &kp LEFT_COMMAND      &kp LEFT_ALT    &kp SPACE  &to 2               &kp BACKSPACE     &kp RIGHT_ALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
