@@ -9,6 +9,20 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        copy {
+            bindings = <&kp LG(C)>;
+            key-positions = <54 39>;
+        };
+
+        paste {
+            bindings = <&kp LG(V)>;
+            key-positions = <54 40>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -21,11 +35,11 @@
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
             bindings = <
-&kp ESC         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4      &kp NUMBER_5                                 &kp NUMBER_6  &kp NUMBER_7      &kp N8     &kp N9   &kp N0    &kp BACKSPACE
-&kp TAB         &kp Q         &kp W         &kp E         &kp R             &kp T                                        &kp Y         &kp U             &kp I      &kp O    &kp P     &kp SINGLE_QUOTE
-&kp LEFT_SHIFT  &kp A         &kp S         &kp D         &mt LEFT_SHIFT F  &kp G                                        &kp H         &kp J             &kp K      &kp L    &kp SEMI  &kp ENTER
-&kp RCTRL       &kp Z         &kp X         &kp C         &kp V             &kp B             &kp LBKT        &kp SEMI   &kp N         &mt LEFT_SHIFT M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                                            &kp ENTER     &mo 1             &kp LEFT_COMMAND  &kp LEFT_ALT    &kp SPACE  &to 2         &kp BACKSPACE     &kp ENTER
+&kp ESC         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                                 &kp NUMBER_6   &kp NUMBER_7  &kp N8     &kp N9   &kp N0    &kp GRAVE
+&kp TAB         &kp Q         &kp W         &kp E         &kp R         &kp T                                        &kp Y          &kp U         &kp I      &kp O    &kp P     &kp SINGLE_QUOTE
+&kp LEFT_SHIFT  &kp A         &kp S         &kp D         &kp F         &kp G                                        &kp H          &kp J         &kp K      &kp L    &kp SEMI  &kp ENTER
+&kp RCTRL       &kp Z         &kp X         &kp C         &kp V         &kp B             &kp LBKT        &kp SEMI   &kp N          &kp M         &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+                                            &kp ENTER     &mo 1         &kp LEFT_COMMAND  &kp LEFT_ALT    &kp SPACE  &kp BACKSPACE  &to 2         &kp ENTER
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -63,7 +77,7 @@
 &kp TAB         &none   &none   &none   &none   &none                                        &kp F11   &kp F12   &none         &none      &none    &trans
 &kp LEFT_SHIFT  &none   &none   &none   &none   &none                                        &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &none    &kp ENTER
 &kp LCTRL       &none   &none   &none   &none   &none         &trans          &trans         &none     &none     &none         &none      &none    &none
-                                &trans  &to 0   &kp LEFT_GUI  &kp LEFT_ALT    &kp BACKSPACE  &to 3     &trans    &trans
+                                &trans  &to 0   &kp LEFT_GUI  &kp LEFT_ALT    &kp BACKSPACE  &trans    &to 3     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
