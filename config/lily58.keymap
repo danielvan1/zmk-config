@@ -54,11 +54,11 @@
             //                     |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&kp ESCAPE      &none   &kp F2  &none      &kp F4    &none                                       &kp BACKSLASH     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS         &kp EQUAL          &kp GRAVE
-&kp TAB         &trans  &none   &none      &sl 0     &sl 1                                       &kp PIPE          &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SINGLE_QUOTE
-&kp LEFT_SHIFT  &none   &none   &kp ENTER  &kp SEMI  &none                                       &kp LEFT_ARROW    &kp DOWN_ARROW        &kp UP                 &kp RIGHT_ARROW   &kp SEMI           &kp ENTER
-&kp LCTRL       &none   &none   &none      &trans    &trans        &trans          &trans        &kp K_MUTE        &kp C_VOLUME_DOWN     &kp C_VOL_UP           &trans            &kp SLASH          &kp DELETE
-                                &none      &trans    &kp LEFT_GUI  &kp LEFT_ALT    &kp LEFT_ALT  &kp LEFT_COMMAND  &kp PAGE_UP           &kp PAGE_DOWN
+&kp ESCAPE         &none   &kp F2  &none      &kp F4    &none                                       &kp BACKSLASH     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS         &kp EQUAL          &kp GRAVE
+&kp TAB            &trans  &none   &none      &sl 0     &sl 1                                       &kp PIPE          &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SINGLE_QUOTE
+&kp LEFT_SHIFT     &none   &none   &kp ENTER  &kp SEMI  &none                                       &kp LEFT_ARROW    &kp DOWN_ARROW        &kp UP                 &kp RIGHT_ARROW   &kp SEMI           &kp ENTER
+&kp RIGHT_CONTROL  &none   &none   &none      &trans    &trans        &trans          &trans        &kp K_MUTE        &kp C_VOLUME_DOWN     &kp C_VOL_UP           &trans            &kp SLASH          &kp DELETE
+                                   &none      &trans    &kp LEFT_GUI  &kp LEFT_ALT    &kp LEFT_ALT  &kp LEFT_COMMAND  &kp PAGE_UP           &kp PAGE_DOWN
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
